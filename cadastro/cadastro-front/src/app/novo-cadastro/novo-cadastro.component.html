@@ -1,0 +1,20 @@
+<h1>Novo Cadastro</h1>
+
+
+<label for="">Nome *</label>
+<input type="text" [(ngModel)]= "cadastro.Nome"> <br>
+<label for="">Matricula *</label>
+<input type="text" data-ls-module="charCounter" maxlength="8" [(ngModel)]= "cadastro.Matricula"> <br>
+<label for="">CPF *</label>
+<input type="text" data-ls-module="charCounter" maxlength="11" [(ngModel)]= "cadastro.CPF"> <br>
+<label for="">Curso</label>
+<input type="text" data-ls-module="charCounter" maxlength="50" [(ngModel)]= "cadastro.Curso"> <br>
+<label for="">RG</label>
+<input type="text" data-ls-module="charCounter" maxlength="10" [(ngModel)]= "cadastro.RG"> <br>
+<label for="">Email</label>
+<input type="text" [(ngModel)]= "cadastro.Email"> <br>
+<button (click)="save()" class="button primary">Salvar Cadastro</button>
+<button (click)="home()" class="button primary">Voltar</button>
+
+
+

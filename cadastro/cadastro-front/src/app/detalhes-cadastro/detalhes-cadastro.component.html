@@ -1,0 +1,21 @@
+<h3>Detalhes do cadastro!</h3><br>
+<span>Dados carregados de : </span>{{ selected_cadastro.Nome }}
+<br>
+<br>
+<label for="">Nome *</label>
+<input type="text" [(ngModel)]= "selected_cadastro.Nome"> <br>
+<label for="">Matricula *</label>
+<input type="text" data-ls-module="charCounter" maxlength="8" [(ngModel)]= "selected_cadastro.Matricula"> <br> 
+<label for="">CPF *</label>
+<input type="text" data-ls-module="charCounter" maxlength="11" [(ngModel)]= "selected_cadastro.CPF"> <br>
+<label for="">Curso</label>
+<input type="text" data-ls-module="charCounter" maxlength="50" [(ngModel)]= "selected_cadastro.Curso"> <br>
+<label for="">RG</label>
+<input type="text" data-ls-module="charCounter" maxlength="10" [(ngModel)]= "selected_cadastro.RG"> <br>
+<label for="">Email</label>
+<input type="text" [(ngModel)]= "selected_cadastro.Email"> <br>
+<button (click)="update()" class="button primary ">Atualizar Cadastro</button>
+<button style="background-color: rgb(250, 6, 6);"(click)="delete()" class="button primary ">Deletar Cadastro</button> 
+<button (click)="home()" class="button">Voltar</button>
+
+
